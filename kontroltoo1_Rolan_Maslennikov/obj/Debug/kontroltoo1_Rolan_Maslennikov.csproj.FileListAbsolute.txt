@@ -1,0 +1,7 @@
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\bin\Debug\kontroltoo1_Rolan_Maslennikov.exe.config
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\bin\Debug\kontroltoo1_Rolan_Maslennikov.exe
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\bin\Debug\kontroltoo1_Rolan_Maslennikov.pdb
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\obj\Debug\kontroltoo1_Rolan_Maslennikov.csprojAssemblyReference.cache
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\obj\Debug\kontroltoo1_Rolan_Maslennikov.csproj.CoreCompileInputs.cache
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\obj\Debug\kontroltoo1_Rolan_Maslennikov.exe
+C:\Users\Rolan\Source\Repos\kontroltoo1_Rolan_Maslennikov\obj\Debug\kontroltoo1_Rolan_Maslennikov.pdb
