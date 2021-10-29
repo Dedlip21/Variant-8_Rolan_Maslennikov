@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,15 +15,17 @@ namespace kontroltoo1_Rolan_Maslennikov
             int num2 = rnd.Next(1, 10);
             int minNum;
 
+            int[] rndNums = new int[2] { num1, num2 };
+
             Console.WriteLine("Number 1 - " + num1);
             Console.WriteLine("Number 2 - " + num2);
 
-            if (num1 < num2)
+            if (rndNums[0] < rndNums[1])
             {
                 minNum = num1;
                 Console.WriteLine("Minimum number is - " + minNum);
             }
-            else if (num1 > num2)
+            else if (rndNums[0] > rndNums[1])
             {
                 minNum = num2;
                 Console.WriteLine("Minimum number is - " + minNum);
@@ -41,15 +43,17 @@ namespace kontroltoo1_Rolan_Maslennikov
             int num2 = rnd.Next(1, 100);
             int maxNum;
 
-            Console.WriteLine("Number 1 - " + num1);
-            Console.WriteLine("Number 2 - " + num2);
+            int[] rndNums = new int[2] { num1, num2 };
 
-            if (num1 > num2)
+            Console.WriteLine("Number 1 - " + rndNums[0]);
+            Console.WriteLine("Number 2 - " + rndNums[1]);
+
+            if (rndNums[0] > rndNums[1])
             {
                 maxNum = num1;
                 Console.WriteLine("Maximum number is - " + maxNum);
             }
-            else if (num1 < num2)
+            else if (rndNums[0] < rndNums[1])
             {
                 maxNum = num2;
                 Console.WriteLine("Maximum number is - " + maxNum);
@@ -61,27 +65,47 @@ namespace kontroltoo1_Rolan_Maslennikov
         }
         public static void lastName()
         {
-            Console.WriteLine("First last name");
+            string[] lnames = new string[3];
+            /*Console.WriteLine("First last name");
             string ln1 = Console.ReadLine();
             Console.WriteLine("Second last name");
             string ln2 = Console.ReadLine();
             Console.WriteLine("Third last name");
-            string ln3 = Console.ReadLine();
-
-            string[] array = { ln1, ln2, ln3 };
-            int maxLen = array[0].Length, indexMax = 0;
-
-            for (int i = 0; i < array.Length; i++)
+            string ln3 = Console.ReadLine();*/
+            for (int m = 0; m < 3; m++)
             {
-                if (array[i].Length > maxLen)
+                Console.WriteLine("Type your last name ");
+                string ln = Console.ReadLine();
+                lnames[m] = ln;
+            }
+            foreach (var l in lnames)
+            {
+                Console.WriteLine("Tere, {0} ", l);
+            }
+
+            /*int m = 0;
+
+            do
+            {
+                m++;
+                Console.WriteLine("Type your last name ");
+                string ln = Console.ReadLine();
+
+            } while (m != 3);*/
+
+
+            int maxLen = lnames[0].Length, indexMax = 0;
+
+            for (int i = 0; i < lnames.Length; i++)
+            {
+                if (lnames[i].Length > maxLen)
                 {
-                    maxLen = array[i].Length;
+                    maxLen = lnames[i].Length;
                     indexMax = i;
                 }
-         
-            }
-            Console.WriteLine("The longest last name is " + array[indexMax]);
 
+            }
+            Console.WriteLine("The longest last name is " + lnames[indexMax]);
         }
         public static void splitWord()
         {
@@ -94,10 +118,22 @@ namespace kontroltoo1_Rolan_Maslennikov
 
             foreach (char c in str)
             {
-                Console.WriteLine(c);
+                char[] letters = new char[] { c };
+                Console.WriteLine(letters);
+                for (int i = 0; i < letters.Length; i++)
+                {
+                    if (letters[i] == 'a' || letters[i] == 'e' || letters[i] == 'i' || letters[i] == 'o' || letters[i] == 'u')
+                    {
+                        vowels++;
+                    }
+                    else
+                    {
+                        consonant++;
+                    }
+                }
             }
 
-            for (int i = 0; i < str.Length; i++)
+            /*for (int i = 0; i < str.Length; i++)
             {
                 if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
                 {
@@ -107,7 +143,7 @@ namespace kontroltoo1_Rolan_Maslennikov
                 {
                     consonant++;
                 }
-            }
+            }*/
 
             Console.WriteLine("Your total number of vowels is: {0}", vowels);
             Console.WriteLine("Your total number of constant is: {0}", consonant);
